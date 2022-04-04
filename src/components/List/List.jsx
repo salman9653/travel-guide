@@ -13,12 +13,12 @@ const List = () => {
 
     return (
         <div className={classes.container}>
-            <Typography varient="h4">
+            <Typography variant="h4">
                 Restaurants, Hotels & Attractions around you
             </Typography>
             <FormControl className={classes.formControl}>
                 <InputLabel>Type</InputLabel>
-                <Select vlaue={type} onChange={(e) => setType(e.target.value)}>
+                <Select value={type} onChange={(e) => setType(e.target.value)}>
                     <MenuItem value="restaurants">Restaurants</MenuItem>
                     <MenuItem value="hotels">Hotels</MenuItem>
                     <MenuItem value="attractions">Attractions</MenuItem>
@@ -26,7 +26,7 @@ const List = () => {
             </FormControl>
             <FormControl className={classes.formControl}>
                 <InputLabel>Ratings</InputLabel>
-                <Select vlaue={type} onChange={(e) => setRating(e.target.value)}>
+                <Select value={type} onChange={(e) => setRating(e.target.value)}>
                     <MenuItem value={0}>All</MenuItem>
                     <MenuItem value={3}>Above 3.0</MenuItem>
                     <MenuItem value={4}>Above 4.0</MenuItem>
