@@ -20,7 +20,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
             />
             <CardContent>
                 <Typography gutterBottom variant='h5'>
-                    {place.name ? place.name : "Restaurant Name"}
+                    {place.name ? place.name : "Name"}
                 </Typography>
                 <Box display="flex" justifyContent="space-between">
                     <Rating name="read-only" value={Number(place.rating)} readOnly />
